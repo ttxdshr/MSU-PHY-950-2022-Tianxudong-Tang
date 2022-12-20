@@ -38,7 +38,7 @@ ROOT::Math::MultiRootFinder* r = new ROOT::Math::MultiRootFinder();
    double x0[2]={1880, 1.38e-23};
    r->Solve(x0);
 
-   double NA = 8.32e7/x0[1];
+   double NA = 8.32/x0[1];
 
    std::cout << "v = " << x0[0] << std::endl;
    std::cout << "k = " << x0[1] << std::endl;
